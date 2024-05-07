@@ -437,6 +437,11 @@ import {
   jobs as haedalJobs,
   fetchers as haedalFetchers,
 } from './plugins/haedal';
+import {
+  jobs as moleJobs,
+  fetchers as moleFetchers,
+  platforms as molePlatforms,
+} from './plugins/mole';
 
 export {
   walletTokensPlatform,
@@ -542,6 +547,7 @@ export const platforms: Platform[] = [
   ...sandglassPlatforms,
   ...kriyaPlatforms,
   ...haedalPlatforms,
+  ...molePlatforms,
 ];
 
 // JOBS //
@@ -629,6 +635,7 @@ export const jobs: Job[] = [
   ...sandglassJobs,
   ...kriyaJobs,
   ...haedalJobs,
+  ...moleJobs,
 ];
 
 // FETCHERS //
@@ -718,6 +725,7 @@ export const fetchers: Fetcher[] = [
   ...sandglassFetchers,
   ...kriyaFetchers,
   ...haedalFetchers,
+  ...moleFetchers,
 ];
 export const fetchersByAddressSystem = getFetchersByAddressSystem(fetchers);
 
